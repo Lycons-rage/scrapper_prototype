@@ -1,0 +1,8 @@
+
+
+TWO FRONTEND REQUIRED
+    1. to take a search string
+        all the css files go to css folder inside static folder
+    2. to return the results
+
+ONE BACKEND REQUIRED TO STORE THE DATA INSIDE A MONGODB DATABASE
