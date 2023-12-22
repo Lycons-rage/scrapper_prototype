@@ -71,7 +71,7 @@ def reviews():
         except Exception as e:
             return f"FATAL ERROR! I DON'T KNOW WHAT TO DO! ERROR INFO: {e}"
         
-        return render_template("result.html", reviews = reviews)
+        return render_template("result.html", reviews = reviews[0:len(reviews)-1])
 
 
 if __name__ == "__main__":

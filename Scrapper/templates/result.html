@@ -10,21 +10,17 @@
             <br>
             <table>
                 <tr>
-                  <th>S.No.</th>
                   <th>NAME</th>
                   <th>RATING</th>
                   <th>REVIEW</th>
                 </tr>
+                {% for review in reviews %}
                 <tr>
-                  <td>Alfreds Futterkiste</td>
-                  <td>Maria Anders</td>
-                  <td>Germany</td>
+                    <td>{{review["Name"]}}</td>
+                    <td>{{review["Rating"]}}</td>
+                    <td>{{review["Review"]}}</td>
                 </tr>
-                <tr>
-                  <td>Centro comercial Moctezuma</td>
-                  <td>Francisco Chang</td>
-                  <td>Mexico</td>
-                </tr>
+                {% endfor %}
               </table>
         </center>
     </body>
